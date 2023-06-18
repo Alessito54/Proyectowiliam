@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Contacto</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #FFF;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #8B0000;
+            color: #FFF;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: #8B0000;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-top: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Contenido principal */
+        main {
+            margin: 20px;
+        }
+
+        form {
+            background-color: #8B0000;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #FFF;
+        }
+
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        form textarea {
+            height: 150px;
+        }
+
+        form input[type="submit"] {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #8B0000;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            form input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Contacto</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+    </ul>
+</nav>
+
+<main>
+    <form action="#" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="interests">Intereses:</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Deporte</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Música</label><br>
+        <input type="checkbox" id="art" name="interests" value="art">
+        <label for="art">Arte</label><br><br>
+
+        <label for="gender">Género:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Masculino</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Femenino</label><br><br>
+
+        <label for="city">Ciudad:</label>
+        <select id="city" name="city">
+            <option value="mexico">Ciudad de México</option>
+            <option value="guadalajara">Guadalajara</option>
+            <option value="monterrey">Monterrey</option>
+            <option value="puebla">Puebla</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2023 Informacion de Videojuegos. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
